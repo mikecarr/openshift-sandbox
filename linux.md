@@ -16,3 +16,14 @@ output
 ```
 not working either
 ```
+
+working
+https://www.techrepublic.com/article/how-to-install-openshift-origin-on-ubuntu-18-04/
+
+NOTE: I don't think I copied kubectl to /usr/local/bin in the second attempt above.
+
+## Starting
+```
+oc cluster up --public-hostname=SERVER_IP
+```
+
