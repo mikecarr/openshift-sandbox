@@ -2,7 +2,7 @@
 My personal notes while learning OpenShift
 
 ## Cluster
-
+* https://about.gitlab.com/handbook/sales/idea-to-production-demo/setup/
 * https://blog.openshift.com/full-cluster-capacity-management-monitoring-openshift/
 
 ## CI/CD
