@@ -34,3 +34,32 @@ oc get all -n default
 ```
 oc get pods -n default
 ```
+
+## Restart Error Pods
+
+List POD's
+```
+oc get pods
+``
+
+Delete ones in error
+```
+oc delete pod docker-registry-1-deploy
+oc delete pod router-1-deploy
+```
+
+Get List of deployment configs
+```
+oc get dc
+``
+
+Roll out new POD's
+```
+oc rollout latest "docker-registry"
+oc rollout latest "router"
+```
+
+Verify
+```
+oc get pods
+```
