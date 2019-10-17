@@ -74,7 +74,7 @@ The server is accessible via web console at:
 ## Redirect caveat
 If you find you keep getting redirected to https://127.0.0.1:8443, you can get around that by creating an SSH tunnel with the command:
 
-<b>Add /console to the URL!<b>
+<b>Add /console to the URL!</b>
 
 ```
 sudo ssh -L 8443:localhost:8443 -f -N USER@SERVER_IP
