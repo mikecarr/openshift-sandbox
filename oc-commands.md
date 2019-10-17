@@ -40,7 +40,7 @@ oc get pods -n default
 List POD's
 ```
 oc get pods
-``
+```
 
 Delete ones in error
 ```
@@ -51,7 +51,7 @@ oc delete pod router-1-deploy
 Get List of deployment configs
 ```
 oc get dc
-``
+```
 
 Roll out new POD's
 ```
