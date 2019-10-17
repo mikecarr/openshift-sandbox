@@ -63,3 +63,22 @@ Verify
 ```
 oc get pods
 ```
+
+### ConfigMaps
+If you make some changes in deployment config and save them, pod will restart and and your changes will take effect:
+
+```
+oc edit dc "deploy-config-example"
+```
+
+If you change something in volumes or configmaps you need to delete pod for his restart:
+```
+oc delete pod "name-of-your-pod"
+```
+
+And pod will restart. Or better still trigger a new deployment by running:
+```
+oc rollout latest "deploy-config-example"
+```
+
+Using oc rollout is better because it will re-deploy all pods if you have a scaled application, and you don't need to identify each pod and delete it.
